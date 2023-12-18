@@ -7,7 +7,7 @@ function togglePassword() {
       eyeIcon.src = 'eye-close.jpg';
     } else {
       passwordInput.type = 'password';
-      eyeIcon.src = 'eye-open.png';
+      eyeIcon.src = 'eye-open1.png';
     }
   }
   
