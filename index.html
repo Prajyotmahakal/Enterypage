@@ -8,12 +8,13 @@
 <body>
 
   <div class="password-container">
-    <input type="password" class="password-input" id="password" placeholder="Enter your password">
+    <input type="password" class="password-input" id="password" placeholder="Enter your password" onkeydown="handleEnter(event)">
     <div class="toggle-password" onclick="togglePassword()">
       <img src="eye-open.png" id="eye-icon" alt="Toggle Password Visibility">
     </div>
+   
   </div>
-
+  
   <script src="script.js"></script>
 
 </body>
