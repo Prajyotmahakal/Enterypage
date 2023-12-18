@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Web Page</title>
+  <style>
+
+    h1 {
+
+     margin-bottom: 20px;
+     color: rgb(249, 90, 27);
+     font-style: italic;
+     font-size: larger;
+     height: 50px;
+
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .icon-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 600px; /* Optional: Adjust the maximum width of the icon container */
+    }
+
+    .icon-row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .icon {
+      width: 80px; /* Adjust the width as needed */
+      height: 80px; /* Adjust the height as needed */
+      margin: 20px;
+    }
+
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%; /* Optional: Applies a circular border to the icons */
+    }
+
+    .icon-title {
+      font-size: 18px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1 class="icon-title">Priorities</h1>
+
+<div class="icon-container" >
+  <div class="icon-row">
+    <div class="icon">
+      <img src="chatgpt icon.png" alt="Icon 1">
+    </div>
+    <div class="icon">
+      <img src="github icon.png" alt="Icon 2">
+    </div>
+    <div class="icon">
+      <img src="linkedin icon.png" alt="Icon 3">
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="icon-row">
+    <div class="icon">
+      <img src="youtube icon.jpg" alt="Icon 4">
+    </div>
+    <div class="icon">
+      <img src="spotify icon.png" alt="Icon 5">
+    </div>
+    <div class="icon">
+      <img src="google icon.png" alt="Icon 6">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
