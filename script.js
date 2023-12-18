@@ -18,7 +18,7 @@ function togglePassword() {
      
       if (passwordInput === '02071401') {
     
-        window.location.href = 'space.html'; 
+        window.location.href = 'spage.html'; 
       } 
     }
   }
