@@ -24,4 +24,14 @@ function togglePassword() {
   }
   
   
+
+ /* var array[]={"prajyot","siddhu","kirkir","masti"};
+  
+setTimeout(
+
+    for(let i=0;i<4;i++){
+    var quotes=document.getElementById('para');
+      quotes.innerHTML=array[i];
+      
+},1000);*/
   
