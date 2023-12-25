@@ -23,15 +23,26 @@ function togglePassword() {
     }
   }
   
-  
+  var quotes=["The Engineer Has Been ,And Is ,A Maker of History.","Software Is A Great Combination Between Artisty And Engineering","Talk Is Cheap. Show Me The Code .","While There's Code .There's Bug .","It's not a bug, it's a feature.","The best error message is the one that never shows up."
+,"Programming is thinking, not typing.","Debugging is like being the detective in a crime movie where you are also the murderer."];
 
- /* var array[]={"prajyot","siddhu","kirkir","masti"};
-  
-setTimeout(
+  function getRandomQuote(){
 
-    for(let i=0;i<4;i++){
-    var quotes=document.getElementById('para');
-      quotes.innerHTML=array[i];
-      
-},1000);*/
+    var index=Math.floor(Math.random()*quotes.length);
+
+    return quotes[index];
+
+  }
+
+  function updateQuote(){
+
+    const quotePara= document.getElementById("quotes");
+
+    quotePara.innerHTML=getRandomQuote();
+
+  }
+
+  setInterval(updateQuote,3000);
+
+
   
