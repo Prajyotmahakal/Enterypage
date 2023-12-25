@@ -23,9 +23,11 @@ function togglePassword() {
     }
   }
   
-  var quotes=["The Engineer Has Been ,And Is ,A Maker of History.","Software Is A Great Combination Between Artisty And Engineering","Talk Is Cheap. Show Me The Code .","While There's Code .There's Bug .","It's not a bug, it's a feature.","The best error message is the one that never shows up."
+ var quotes=["The Engineer Has Been ,And Is ,A Maker of History.","Software Is A Great Combination Between Artisty And Engineering","Talk Is Cheap. Show Me The Code .","While There's Code .There's Bug .","It's not a bug, it's a feature.","The best error message is the one that never shows up."
 ,"Programming is thinking, not typing.","Debugging is like being the detective in a crime movie where you are also the murderer."];
 
+
+ 
   function getRandomQuote(){
 
     var index=Math.floor(Math.random()*quotes.length);
@@ -44,5 +46,3 @@ function togglePassword() {
 
   setInterval(updateQuote,3000);
 
-
-  
