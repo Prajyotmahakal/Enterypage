@@ -40,9 +40,10 @@ function togglePassword() {
 
     const quotePara= document.getElementById("quotes");
 
+    
     quotePara.innerHTML=getRandomQuote();
 
   }
 
-  setInterval(updateQuote,3000);
+  setInterval(updateQuote,8000);
 

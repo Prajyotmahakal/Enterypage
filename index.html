@@ -29,10 +29,25 @@
   color: #04406d; 
   text-align: center;
   text-wrap:wrap;
-  
+  margin: 3px;
+  animation: fadeInOut 8s infinite;
+    
 }
 
-
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.6;
+        color: rgb(7, 76, 145);
+    }
+    50% {
+        opacity: 1;
+        color: #04406d; 
+    }
+    100% {
+        opacity: 0.6;
+        color: #044475; 
+    }
+}
   </style>
 </head>
 <body>
