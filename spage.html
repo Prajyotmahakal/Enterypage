@@ -9,15 +9,20 @@
     h1 {
 
      margin-bottom: 20px;
-     color: rgb(223, 122, 241);
+     color: rgb(10, 10, 10);
      font-style: italic;
-     font-size: xx-large;
-     height: 50px;
-
+    font-weight: 900;
+     
+      
     }
 
 
     body {
+      background-color: white;
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size:40%;
+      transition: background-image 1s linear ; 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -39,6 +44,7 @@
     }
 
     .icon {
+      color: white;
       width: 80px;
       height: 80px; 
       margin: 20px;
@@ -56,61 +62,146 @@
       margin-top: 10px;
       text-align: center;
     }
+
+    .icon {
+ 
+  transition: width 1s, height 1s;
+  transition-timing-function: ease;
+}
+
+.icon:hover {
+  width: 120px;
+  height: 120px;
+}
+    
+
+  #footer{
+    position: fixed;
+        
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
   </style>
 </head>
-<body>
+<body id="body">
 
-<h1 class="icon-title">Tools</h1>
+  
 
+<h1 class="icon-title" id="title">TOOLS</h1>
+
+<div >
 <div class="icon-container" >
-  <div class="icon-row">
-    <div class="icon">
-      <a href="https://chat.openai.com/">
-      <img src="chatgpt icon.png" alt="Icon 1"></a>
+  <div class="icon-row"  >
+    <div class="icon" onmouseover="setBackground('chatgpt')" onmouseout="removeBackground()">
+      <a href="https://chat.openai.com/"  >
+      <img src="chatgpt icon.png" id="chatgpt" alt="Icon 1"></a>
     </div>
-    <div class="icon">
+    <div class="icon"   onmouseover="setBackground('github')" onmouseout="removeBackground()">
       <a href="https://github.com/">
 
-      <img src="github icon.png" alt="Icon 2">
+      <img src="github icon.png" id="github" alt="Icon 2">
       </a>
     </div>
-    <div class="icon">
+    <div class="icon"  onmouseover="setBackground('codingninja')" onmouseout="removeBackground()">
       <a href="https://www.codingninjas.com/studio/home">
-      <img src="codingninja.png" alt="Icon 3">
+      <img src="codingninja.png"  id="codingninja" alt="Icon 3">
       </a>
     </div>
-    <div class="icon">
+    <div class="icon"  onmouseover="setBackground('prepinstaprime')" onmouseout="removeBackground()">
       <a href="https://prepinstaprime.com/">
-      <img src="Prep Insta.png" alt="Icon 4">
-      </a>
-    </div>
-</div>
-
-<div class="icon-container">
-  <div class="icon-row">
-    <a href="https://www.youtube.com/">
-    <div class="icon">
-      <img src="youtube icon.jpg" alt="Icon 5">
-      </a>
-    </div>
-    <div class="icon">
-      <a href="https://www.geeksforgeeks.org/">
-        <img class="XNo5Ab" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAYFBMVEX////n8enF3MnD2cfS5NZTnmQAgisPhDIchzmRvZrO4tKw0LcAgCUhiDxmp3RAlFQ1kUzw9/JYn2jz+PR4sIQvjUZHmFsmikC00brm8eiZwaFeo27W5tnf7OKmya2CtY2bMwxhAAAA0UlEQVR4Ae3QR3bDMAxF0a9CApIM9c7i/e8y6umJPfeVWN7hDHh5ThBGMS5xFAb4KFaaiDjZK+EltEpxyW4sKi+IywqoCqYir4VvGU6NapcXpJ0UQCFdukTV9g2+CgYaRxom/Gpmk/OML2wyn9qhK4f2ysRiNWohvZNuGDo5gkSPWDkSH25SM5h8MOlemZDDRok5xiEUhiTHxIwo7ByJskDjhQ2QM/sGsErI4hAyU1ksm2mWMkRclMQc4hLcRZNWx+hGtYTcA3wyuQaXxk14zssbLScMjoU+XLEAAAAASUVORK5CYII="  alt="6" >
-
-      </a>
-    </div>
-    <div class="icon">
-      <a href="https://www.google.com/">
-      <img src="google icon.png" alt="Icon 7">
-      </a>
-    </div>
-    <div class="icon">
-      <a href="https://leetcode.com/">
-      <img src="leetcode icon.png" alt="Icon 8">
+      <img src="Prep Insta.png" id="prepinstaprime" alt="Icon 4">
       </a>
     </div>
   </div>
 </div>
+<div class="icon-container">
+  <div class="icon-row"  >
+   
+    <div class="icon">
+      <a href="https://www.youtube.com/"  onmouseover="setBackground('youtube')" onmouseout="removeBackground()">
+      <img src="youtube icon.jpg" id="youtube" alt="Icon 5">
+      </a>
+    </div>
+    <div class="icon"  onmouseover="setBackground('gog')" onmouseout="removeBackground()">
+      <a href="https://www.geeksforgeeks.org/">
+        <img class="XNo5Ab" id="gog" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAYFBMVEX////n8enF3MnD2cfS5NZTnmQAgisPhDIchzmRvZrO4tKw0LcAgCUhiDxmp3RAlFQ1kUzw9/JYn2jz+PR4sIQvjUZHmFsmikC00brm8eiZwaFeo27W5tnf7OKmya2CtY2bMwxhAAAA0UlEQVR4Ae3QR3bDMAxF0a9CApIM9c7i/e8y6umJPfeVWN7hDHh5ThBGMS5xFAb4KFaaiDjZK+EltEpxyW4sKi+IywqoCqYir4VvGU6NapcXpJ0UQCFdukTV9g2+CgYaRxom/Gpmk/OML2wyn9qhK4f2ysRiNWohvZNuGDo5gkSPWDkSH25SM5h8MOlemZDDRok5xiEUhiTHxIwo7ByJskDjhQ2QM/sGsErI4hAyU1ksm2mWMkRclMQc4hLcRZNWx+hGtYTcA3wyuQaXxk14zssbLScMjoU+XLEAAAAASUVORK5CYII="  alt="6" >
 
+      </a>
+    </div>
+    <div class="icon"  onmouseover="setBackground('google')" onmouseout="removeBackground()">
+      <a href="https://www.google.com/">
+      <img src="google icon.png" id="google" alt="Icon 7">
+      </a>
+    </div>
+    <div class="icon"  onmouseover="setBackground('leetcode')" onmouseout="removeBackground()">
+      <a href="https://leetcode.com/">
+      <img src="leetcode icon.png" id="leetcode" alt="Icon 8">
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+<div id="footer" style="margin-top: 20px;">
+  <input type="radio" id="light-mode" name="mode" onclick="lightmode()" checked>
+  <label for="light-mode" >Light-mode</label>
+  <input type="radio" id="drak-mode"  name="mode">
+  <label for="drak-mode"  onclick="drakmode()">Drak-mode</label>
+</div>
+
+</body>
+<script>
+
+       
+      var body=document.getElementById('body');
+      var title=document.getElementById('title');
+      //var backgroundColor=window.getComputedStyle(body).getPropertyValue("background-color");
+      // this line is used to get the properties of style
+    function drakmode(){
+     
+         body.style.backgroundColor="black";
+         body.style.color="white";
+    }
+
+    function lightmode(){
+       body.style.backgroundColor="white";
+       body.style.color="black";
+    }
+
+
+
+    function setBackground(id){
+
+
+     
+      
+      var imageSrc=document.getElementById(id).getAttribute("src");
+
+      body.style.backgroundImage="url('"+ imageSrc +"')";
+    
+      
+      title.innerHTML=id.toUpperCase();
+
+
+        if(id=="prepinstaprime" || id=="codingninja" || id=="leetcode")
+           title.style.color="white";
+        else if(id=="github")
+            title.style.color="red";
+      }
+
+      function removeBackground(){
+
+
+        console.log("remove");
+        
+        body.style.backgroundImage = "none";
+          // center.backgroundImage="url('D:\Development\WEB\Enterypage\blankBrackground.jpeg')"
+        
+          title.innerHTML="TOOLS";
+          title.style.color="black";
+      }
+
+</script>
 </body>
 </html>
