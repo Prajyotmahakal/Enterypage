@@ -20,6 +20,8 @@ function togglePassword() {
     
         window.location.href = 'spage.html'; 
       } 
+    else{
+        console.log("Wrong Password");
     }
   }
   
