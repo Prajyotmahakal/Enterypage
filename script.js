@@ -16,7 +16,7 @@ function togglePassword() {
       const passwordInput = document.getElementById('password').value;
   
      
-      if (passwordInput === '02071401') {
+      if (passwordInput === 'Pravanya2204') {
     
         window.location.href = 'spage.html'; 
       } 
